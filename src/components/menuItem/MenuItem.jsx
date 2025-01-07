@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import { Button } from "../index"
-import { fetchData } from "../../hooks/useCustomerHomeData.js"
+import { fetchData } from "@/hooks/useCustomerHomeData.js"
 import { sliceName } from "@/utils/utilities"
 
 const MenuItem = ({ isPromotional }) => {

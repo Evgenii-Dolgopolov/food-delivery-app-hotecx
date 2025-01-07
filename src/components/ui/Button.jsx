@@ -2,11 +2,13 @@
 import React, { useEffect, useState } from "react"
 
 export default function Button({ onClick, children }) {
-  const [isClient, setIsClient] = useState(false)
   // Hydration issue fix
+  const [isClient, setIsClient] = useState(false)
+
   useEffect(() => {
     setIsClient(true)
   }, [])
+  
   if (!isClient) return null
 
   const handleClick = e => {
